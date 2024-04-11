@@ -7,6 +7,7 @@ import { useSectionInView } from '@/lib/hooks';
 import { sendEmail } from '@/actions/sendEmail';
 import SubmitBtn from './submit-btn';
 import toast from 'react-hot-toast';
+import { Message } from 'postcss';
 
 export default function Contact() {
     const { ref } = useSectionInView("Contact", 0.5);
@@ -24,15 +25,19 @@ export default function Contact() {
         <SectionHeading>Contact me</SectionHeading>
         <p className="text-gray-700 -mt-6">
           Please contact me directly at{" "}
-          <a className="underline" href="mailto:example@gmail.com">
-            example@gmail.com
+          <a className="underline" href="mailto:diegobryanre@gmail.com">
+            diegobryanre@gmail.com
           </a>{" "}
           or through this form.
         </p>
         <form className="mt-10 flex flex-col" action={async formData => {
             const { data, error } = await sendEmail(formData);
-
+            
             if (error) {
+              if (typeof error === 'object'){
+                toast.error(String(error.message));
+                return;
+              }
               toast.error(error);
               return;
             }
