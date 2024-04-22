@@ -1,21 +1,26 @@
 "use client";
 
-import React from 'react';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
-import Link from 'next/link';
-import { BsArrowRight, BsLinkedin } from 'react-icons/bs';
-import { HiDownload } from 'react-icons/hi';
-import { FaGithubSquare } from 'react-icons/fa';
-import { useSectionInView } from '@/lib/hooks';
+import React from "react";
+import Image from "next/image";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
+import { FaGithubSquare } from "react-icons/fa";
+import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
-  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
   const { ref } = useSectionInView("Home", 0.5);
-  
+
   return (
-    <section ref={ref} id='home' className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
+    <section
+      ref={ref}
+      id="home"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -58,8 +63,8 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Diego.</span> I'm a{" "}
-        <span className="font-bold">Full Stack Software Engineer</span> that
-        is passionate about solving problems with{" "}
+        <span className="font-bold">Full Stack Software Engineer</span> that is
+        passionate about solving problems with{" "}
         <span className="font-bold">
           technical analysis, creativity, and team-driven development.
         </span>{" "}
@@ -72,25 +77,39 @@ export default function Intro() {
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{delay: 0.1}}
+        transition={{ delay: 0.1 }}
       >
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full cursor-pointer outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
-            setActiveSection("Contact")
-            setTimeOfLastClick(Date.now())
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition'/>
+          Contact me here{" "}
+          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
-        <a href="/CV.pdf" download className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full cursor-pointer outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10">
-          Download CV <HiDownload className='opacity-70 group-hover:translate-y-1 transition hover:opacity-100'/>
+        <a
+          href="/diego-bryan-resume.pdf"
+          download
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full cursor-pointer outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10"
+        >
+          Download CV{" "}
+          <HiDownload className="opacity-70 group-hover:translate-y-1 transition hover:opacity-100" />
         </a>
-        <a href="https://www.linkedin.com/in/diego-bryan/" target="_blank" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] cursor-pointer hover:text-gray-950 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10">
+        <a
+          href="https://www.linkedin.com/in/diego-bryan/"
+          target="_blank"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] cursor-pointer hover:text-gray-950 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10"
+        >
           <BsLinkedin />
         </a>
-        <a href="https://github.com/thediegobryan" target="_blank" className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] cursor-pointer hover:text-gray-950 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10">
+        <a
+          href="https://github.com/thediegobryan"
+          target="_blank"
+          className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full text-[1.35rem] cursor-pointer hover:text-gray-950 outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10"
+        >
           <FaGithubSquare />
         </a>
       </motion.div>
