@@ -2,9 +2,11 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
+import totesmoveCo from "@/public/totesmoveCo.png";
+import petsoft from "@/public/petsoft.png";
+import educationmapping from "@/public/educationmapping.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import { link } from "fs";
 
 export const links = [
   {
@@ -78,25 +80,28 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Totes Move Co.",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Ecommerce project that aims to help people with their move. It has features like booking, payments, and email.",
+    tags: ["Next.js", "Typescript", "React", "MapBox", "Tailwind", "Stripe"],
+    imageUrl: totesmoveCo,
+    websiteUrl: "https://move-co.vercel.app/",
   },
   {
-    title: "rmtDev",
+    title: "PetSoft",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Pay Daycare and Boarding Management System for Pet Care Businesses. It has features like check-in/out and email.",
+    tags: ["Next.js", "Typescript", "React", "Prisma", "Tailwind", "Resend"],
+    imageUrl: petsoft,
+    websiteUrl: "https://pet-soft.vercel.app/app/dashboard",
   },
   {
-    title: "Word Analytics",
+    title: "Education Mapping",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "An Education mapping project that utilizes geoJSON and api data to display college education level by county.",
+    tags: ["JavaScripit", "APIs", "geoJSON", "D3", "CSS"],
+    imageUrl: educationmapping,
+    websiteUrl: "https://thediegobryan.github.io/FCC_Choropleth_Map/",
   },
 ] as const;
 
@@ -112,12 +117,14 @@ export const skillsData = [
   "Tailwind",
   "Prisma",
   "MongoDB",
-  "Redux",
   "GraphQL",
-  "Apollo",
+  "Stripe",
+  "Shopify",
+  "FastAPI",
   "Express",
   "PostgreSQL",
   "Python",
   "Django",
+  "Flask",
   "Framer Motion",
 ] as const;
