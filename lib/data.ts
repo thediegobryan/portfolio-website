@@ -90,7 +90,7 @@ export const projectsData = [
   {
     title: "PetSoft",
     description:
-      "Pay Daycare and Boarding Management System for Pet Care Businesses. It has features like check-in/out and email.",
+      "Pet Daycare and Boarding Management System for Pet Care Businesses. It has features like check-in/out and email.",
     tags: ["Next.js", "Typescript", "React", "Prisma", "Tailwind", "Resend"],
     imageUrl: petsoft,
     websiteUrl: "https://pet-soft.vercel.app/app/dashboard",
