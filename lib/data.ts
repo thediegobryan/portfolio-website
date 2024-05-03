@@ -82,7 +82,7 @@ export const projectsData = [
   {
     title: "Totes Move Co.",
     description:
-      "Ecommerce project that aims to help people with their move. It has features like booking, payments, and email.",
+      "Ecommerce project that aims to help people with their move. It has features like checkout, payments, and email.",
     tags: ["Next.js", "Typescript", "React", "Prisma", "Tailwind", "Stripe"],
     imageUrl: totesmoveCo,
     websiteUrl: "https://move-co.vercel.app/",
@@ -90,7 +90,7 @@ export const projectsData = [
   {
     title: "PetSoft",
     description:
-      "Pet Daycare and Boarding Management System for Pet Care Businesses. It has features like check-in/out and email.",
+      "Daycare and Boarding Management System for Pet Care Businesses. It has features like check-in/out and email.",
     tags: ["Next.js", "Typescript", "React", "Prisma", "Tailwind", "Resend"],
     imageUrl: petsoft,
     websiteUrl: "https://pet-soft.vercel.app/app/dashboard",
