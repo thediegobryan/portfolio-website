@@ -83,7 +83,7 @@ export const projectsData = [
     title: "Totes Move Co.",
     description:
       "Ecommerce project that aims to help people with their move. It has features like booking, payments, and email.",
-    tags: ["Next.js", "Typescript", "React", "MapBox", "Tailwind", "Stripe"],
+    tags: ["Next.js", "Typescript", "React", "Prisma", "Tailwind", "Stripe"],
     imageUrl: totesmoveCo,
     websiteUrl: "https://move-co.vercel.app/",
   },
