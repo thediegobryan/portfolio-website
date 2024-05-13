@@ -14,16 +14,12 @@ export const links = [
     hash: "#home",
   },
   {
-    name: "About",
-    hash: "#about",
+    name: "Skills",
+    hash: "#skills",
   },
   {
     name: "Projects",
     hash: "#projects",
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
   },
   {
     name: "Experience",
@@ -37,28 +33,12 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "B.S. Civil Engineering",
+    title: "Software Engineer",
     location: "Raleigh, NC",
     description:
-      "I graduated from North Carolina State University with a B.S. in Civil Engineering, concentrating in structures",
-    icon: React.createElement(LuGraduationCap),
-    date: "May 2020",
-  },
-  {
-    title: "Project Engineer",
-    location: "Rocky Mount, NC",
-    description:
-      "As a structural engineer I ensured project timeline adherence, collaborated with municipal leaders on economic proposals, and performed comprehensive structural and safety analyses.",
+      "As the sole engineer, I spearheaded the startup's tech direction by deploying key business software, crafting a solid system architecture, designing data infrastructure, and writing Python scripts for web scraping.",
     icon: React.createElement(CgWorkAlt),
-    date: "July 2020 - July 2021",
-  },
-  {
-    title: "Coding Bootcamp Graduate",
-    location: "Durham, NC",
-    description:
-      "16-week full-stack coding bootcamp with an emphasis on Python, Javascript, and deploying web applications with Django",
-    icon: React.createElement(LuGraduationCap),
-    date: "Sep 2022",
+    date: "Jan 2024 - April 2024",
   },
   {
     title: "Back-End Engineer",
@@ -69,12 +49,28 @@ export const experiencesData = [
     date: "Nov 2022 - Jan 2024",
   },
   {
-    title: "Startup Software Engineer",
+    title: "Coding Bootcamp Graduate",
+    location: "Durham, NC",
+    description:
+      "16-week full-stack coding bootcamp with an emphasis on Python, Javascript, and deploying web applications with Django",
+    icon: React.createElement(LuGraduationCap),
+    date: "Sep 2022",
+  },
+  {
+    title: "Project Engineer",
+    location: "Rocky Mount, NC",
+    description:
+      "As a structural engineer I ensured project timeline adherence, collaborated with municipal leaders on economic proposals, and performed comprehensive structural and safety analyses.",
+    icon: React.createElement(CgWorkAlt),
+    date: "July 2020 - July 2021",
+  },
+  {
+    title: "B.S. Civil Engineering",
     location: "Raleigh, NC",
     description:
-      "As the sole engineer, I spearheaded the startup's tech direction by deploying key business software, crafting a solid system architecture, designing data infrastructure, and writing Python scripts for web scraping.",
-    icon: React.createElement(CgWorkAlt),
-    date: "Jan 2024 - April 2024",
+      "I graduated from North Carolina State University with a B.S. in Civil Engineering, concentrating in structures",
+    icon: React.createElement(LuGraduationCap),
+    date: "May 2020",
   },
 ] as const;
 
